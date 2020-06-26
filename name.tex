@@ -1,10 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
 
-\input{exrapackages}
-\input{settings}
-\input{newcommands}
-\input{TitlePage}
+\input{preamble/general}
 
 \documenttype{Documentation}
 \title{}
@@ -16,15 +13,10 @@
 \begin{document}
 
 % ========== TITLE PAGE WITH ABSTRACT ============
-	\maketitle
-
-	\thispagestyle{empty}
-	\cleardoublepage\tableofcontents
-	\setcounter{page}{0}
-	
+\maketitle
 	
 % ========== MAIN PART OF THE DOCUMENT ===========
-	\cleardoublepage
+
 % 	\input{Introduction}
 	
 	

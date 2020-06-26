@@ -1,20 +1,14 @@
 \makeatletter
-
-\newcommand*{\version}[1]{\gdef\@version{#1}}
-\newcommand*{\@version}{0.0.0}
-\newcommand*{\documenttype}[1]{\gdef\@documenttype{#1}}
-\newcommand*{\@documenttype}{Documentation}
-
 \renewcommand*{\maketitle}{
 \begin{titlepage}
 
 	\begin{figure}
 		\begin{minipage}{0.45\linewidth}\flushleft
-			\ETHlogo[5cm]
+			\includegraphics[width=5cm]{ETHLogo}
 		\end{minipage}
 		\hfill
 		\begin{minipage}{0.45\linewidth}\flushright
-			\includegraphics[height=1.5cm]{IPA.png}
+			\includegraphics[height=1.1cm]{IPALogo}\vspace*{1pt}
 		\end{minipage}
 		\hrule height 1pt
 	\end{figure}\vspace*{.5cm}
@@ -23,11 +17,14 @@
 	{\Large\scshape \@documenttype \strut\par}\vspace*{.5cm}
 	{\Huge\bfseries\@title\unskip\strut\par}\vspace*{1.5cm}
 	{\large\@author\unskip\strut\par}\vspace*{.5cm}
-	\input{Abstract}
+	\input{abstract}
+	\vspace*{2ex}
+	\input{toc}
 	\vfill
 	
 	\flushleft
 	ETH Z\"urich, Switzerland, \@date \hfill Version \@version
+	\cleardoublepage
 
 \end{titlepage}}
 
