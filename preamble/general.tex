@@ -2,10 +2,9 @@
 \makeatletter 
 \def\input@path{ {sections/} {preamble/} {frontbackmatter/}} 
 
-\newcommand*{\version}[1]{\gdef\@version{#1}}
-\newcommand*{\@version}{0.0.0}
-\newcommand*{\documenttype}[1]{\gdef\@documenttype{#1}}
-\newcommand*{\@documenttype}{Documentation}
+\newcommand*{\version}[1]{\gdef\@version{#1}}\newcommand*{\@version}{0.0.0}
+\newcommand*{\documenttype}[1]{\gdef\@documenttype{#1}}\newcommand*{\@documenttype}{Documentation}
+\newcommand*{\loc}[1]{\gdef\@loc{#1}}
 \makeatother
 
 \input{packages}
@@ -21,5 +20,6 @@
 
 \setlength{\headheight}{14pt}
 \pagestyle{fancy}
+\pagenumbering{gobble}
 
 \input{titlepage}
