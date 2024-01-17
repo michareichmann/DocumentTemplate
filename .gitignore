@@ -8,4 +8,5 @@
 !*.png
 !*.jpg
 
-example.pdf
+out
+!example.pdf
